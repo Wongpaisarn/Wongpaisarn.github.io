@@ -1,0 +1,45 @@
+/* profile */
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 350px;
+}
+#intro h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+/* navbar */
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* contact */
+.add{
+    padding-left: 0;
+    text-align: center;
+} 
+
+@media screen and (max-width:400px){
+    #pic img{
+        width: 250px;
+    }  
+    .main{
+        top: 65%; 
+        right: 7%;
+    }  
+    #intro h2{
+        font-size: 1rem;
+    }
+/* heading */
+    .heading{
+        font-size: 1.5rem;
+    }
+    .row{
+        grid-template-columns: repeat(auto-fit,15rem);
+        justify-content: center;
+    }
+}

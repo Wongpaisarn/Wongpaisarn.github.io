@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+}
+.navbar ul li{
+    font-family: 'Roboto Mono';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px #fff;
+
+}
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 737px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('IMG/my2.jpg') no-repeat center center/cover;
+    filter: brightness(0.4);
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    position: absolute;
+    flex-direction: column;
+    top: 45%;
+    right: 10%;
+    align-items: center;
+    display: flex;
+}
+.heading{
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .2s ease;
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 5px white;
+    font-weight: bold;
+}
+
+/* profile */
+#profile{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 450px;
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+#intro h2{
+    font-family: 'Roboto Mono';
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#intro p{
+    font-family: 'Roboto Mono';
+}
+
+
+/* Education */
+#education{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,20rem);
+    justify-content: center;
+}
+.box{
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+.box h4{
+    padding: 10px;
+    font-family: 'Roboto Mono';
+
+}
+.box p{
+    padding: 10px;
+    font-family: 'Roboto Mono';  
+}
+.box img{
+    padding-top: 20px;
+}
+
+/* previous */
+
+.table-box{
+    margin: 50px auto;
+    font-family: 'Roboto Mono';
+}
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 13px;
+    color: black;
+    box-shadow: 0 1px 4px 0 rgba(0,0 ,0.5, 0.3);
+    background-color: white;
+    border-radius: 5px;
+}
+.table-cell{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+}
+.table-head{
+    background: #D76A03;
+    color: white;
+    box-shadow: none;
+    font-weight: 600;
+}
+.table-head .table-cell{
+    border-right: none;
+}
+.table-last{
+    border-right: none;
+    padding-left: 10px;
+    text-align: left;
+}
+.table-first{
+    padding-left: 10px;
+}
+.photo{
+    text-align: center;
+    font-family: 'Roboto Mono';
+}
+.gallerly{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,20rem);
+    justify-content: center;
+    margin-top: 20px;
+}
+.gallerly .gall{
+    box-sizing: border-box;
+}
+.gallerly span img{
+    width: 250px;
+    height: 350px;
+    border-radius: 10px; 
+}
+
+/* contact */
+
+.con{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    font-family: 'Roboto Mono';
+}
+.add{
+    text-align: left;
+    padding-left: 100px;
+    padding-bottom: 50px;
+} 
+.abb{
+    text-align: center;
+}
+.abb a{
+    text-decoration: none;
+}
+.abb #show{
+    color: #fff;
+}
+.abb #show :hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px #fff;
+}
